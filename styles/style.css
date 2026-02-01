@@ -48,6 +48,18 @@ main {
   gap: var(--gap);
 }
 
+/* quotes image */
+.img-quotes {
+  position: absolute;
+  top: 1rem;
+  right: 6rem;
+  height: 5rem;
+  z-index: 1;
+  pointer-events: none;
+  display: none;
+}
+
+
 /* responsive grid */
 @media (min-width: 600px) {
   main {
@@ -67,6 +79,10 @@ main {
   body {
     place-items: center;
   }
+
+  .img-quotes {
+    display: block;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -81,6 +97,7 @@ main {
 
 /* card base */
 section {
+  position: relative;
   padding: 1.5rem;
   border-radius: var(--radius);
   background: var(--section-bg, var(--white));
@@ -166,3 +183,10 @@ section article p {
   font-size: 0.9rem;
   color: var(--secondary-color, currentColor);
 }
+
+section > header,
+section > article {
+  position: relative;
+  z-index: 2;
+}
+
