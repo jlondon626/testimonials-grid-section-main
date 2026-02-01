@@ -20,8 +20,8 @@ html {
 body {
   margin: 0;
   padding: 1rem;
-  background-color: var(--grey-100);
   display: grid;
+  background-color: var(--grey-100);
   box-sizing: border-box;
   align-content: center;
   justify-content: center;
