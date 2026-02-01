@@ -102,6 +102,9 @@ section {
   border-radius: var(--radius);
   background: var(--section-bg, var(--white));
   color: var(--main-color, var(--grey-500));
+  box-shadow:
+    0 30px 60px rgba(17, 12, 46, 0.12),
+    0 60px 120px rgba(17, 12, 46, 0.08);
 }
 
 /* theme modifiers */
